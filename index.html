@@ -5,19 +5,97 @@
   <link rel="alternate icon" href="favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios">
-  <meta name="keywords" content="desenvolvedor full stack, contratar desenvolvedor, desenvolvimento web, sistemas sob medida, Lucas Oliveira Bastos">
+  <meta name="description" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios. React, Node.js, Python, Power Platform.">
+  <meta name="keywords" content="desenvolvedor full stack, contratar desenvolvedor, desenvolvimento web, sistemas sob medida, Lucas Oliveira Bastos, React, Node.js, Python, JavaScript, Power Platform, Azure, AWS">
+  <meta name="author" content="Lucas Oliveira Bastos">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="pt-br">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack">
+  <meta property="og:description" content="Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lucas-dev98.github.io">
+  <meta property="og:image" content="https://lucas-dev98.github.io/assets/images/profileImage.jpg">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios.">
+  <meta name="twitter:image" content="https://lucas-dev98.github.io/assets/images/profileImage.jpg">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lucas Oliveira Bastos",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://lucas-dev98.github.io",
+    "image": "https://lucas-dev98.github.io/assets/images/profileImage.jpg",
+    "email": "l.o.bastos@live.com",
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Vale S.A."
+    },
+    "knowsAbout": ["JavaScript", "React", "Node.js", "Python", "Power Platform", "Azure", "AWS"],
+    "sameAs": [
+      "https://linkedin.com/in/lucas-oliveira-bastos",
+      "https://github.com/Lucas-dev98"
+    ]
+  }
+  </script>
+  
   <title>Lucas Oliveira Bastos - Desenvolvedor Full Stack</title>
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style">
+  <link rel="preload" href="assets/images/profileImage.jpg" as="image">
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<section class="hero">
+<!-- Navegação -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <img src="assets/images/profileIcon.svg" alt="Logo" class="navbar-logo">
+      <span class="navbar-name">Lucas Bastos</span>
+    </div>
+    
+    <div class="navbar-menu" id="navbar-menu">
+      <a href="#home" class="navbar-item active" data-section="home">Início</a>
+      <a href="#about" class="navbar-item" data-section="about">Sobre</a>
+      <a href="#projects" class="navbar-item" data-section="projects">Projetos</a>
+      <a href="#blog" class="navbar-item" data-section="blog">Blog</a>
+      <a href="#experience" class="navbar-item" data-section="experience">Experiência</a>
+      <a href="#skills" class="navbar-item" data-section="skills">Skills</a>
+      <a href="#contact" class="navbar-item" data-section="contact">Contato</a>
+    </div>
+    
+    <div class="navbar-controls">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-sun theme-icon-light"></i>
+        <i class="fas fa-moon theme-icon-dark"></i>
+      </button>
+      
+      <div class="navbar-toggle" id="navbar-toggle">
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+        <span class="navbar-toggle-icon"></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-image">
-      <img src="assets/images/profileImage.jpg" alt="Lucas Oliveira Bastos - Desenvolvedor Full Stack" class="profile-photo">
+      <img src="assets/images/profileImage.jpg" alt="Foto de Lucas Oliveira Bastos, Desenvolvedor Full Stack" class="profile-photo" width="280" height="280">
     </div>
     
     <h1 class="hero-name">Lucas Oliveira Bastos</h1>
@@ -34,11 +112,11 @@
   </div>
 </section>
 
-<section class="value-props">
-  <h2>Como posso impulsionar seu negócio?</h2>
+<section class="value-props" id="about">
+  <h2 class="animate-on-scroll">Como posso impulsionar seu negócio?</h2>
   
   <div class="value-cards">
-    <div class="value-card">
+    <div class="value-card animate-on-scroll">
       <div class="icon-box">
         <i class="fas fa-rocket"></i>
       </div>
@@ -51,7 +129,7 @@
       </ul>
     </div>
     
-    <div class="value-card">
+    <div class="value-card animate-on-scroll">
       <div class="icon-box">
         <i class="fas fa-server"></i>
       </div>
@@ -67,12 +145,12 @@
 </section>
 
 <section class="featured-projects" id="projects">
-  <h2>Projetos que geraram impacto real</h2>
+  <h2 class="animate-on-scroll">Projetos que geraram impacto real</h2>
   
   <div class="projects-grid">
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/AirQuality.png" alt="Air Quality App" loading="lazy">
+        <img src="./projetos/AirQuality.png" alt="Sistema de monitoramento da qualidade do ar - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>React</span>
           <span>API</span>
@@ -88,18 +166,15 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/airQuality" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
-          </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/Spotify.jpg" alt="Spotify Clone" loading="lazy">
+        <img src="./projetos/Spotify.jpg" alt="Clone do Spotify com player funcional - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>HTML</span>
           <span>CSS</span>
@@ -115,18 +190,15 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/Spotify" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
-          </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/Pokemon.png" alt="Pokédex" loading="lazy">
+        <img src="./projetos/Pokemon.png" alt="Pokédex interativa com API - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>JavaScript</span>
           <span>API</span>
@@ -142,18 +214,15 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/projeto-pokedex" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
-          </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/XDevs.png" alt="X-Devs" loading="lazy">
+        <img src="./projetos/XDevs.png" alt="Projeto X-Devs - Landing page moderna - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>HTML</span>
           <span>CSS</span>
@@ -169,18 +238,15 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/projeto-xdevs" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
-          </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/FilhosDoLeao.png" alt="Filhos do Leão" loading="lazy">
+        <img src="./projetos/FilhosDoLeao.png" alt="Plataforma Filhos do Leão com sistema completo - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>React</span>
           <span>Node.js</span>
@@ -196,18 +262,15 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/FilhosDoLeao" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
-          </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card animate-on-scroll">
       <div class="project-image">
-        <img src="./projetos/Vale.jpg" alt="Evolução Parada Fria" loading="lazy">
+        <img src="./projetos/Vale.jpg" alt="Sistema de Análise Parada Fria - Vale S.A. - Lucas Bastos" loading="lazy" decoding="async">
         <div class="tech-tags">
           <span>Python</span>
           <span>Data Analysis</span>
@@ -223,10 +286,55 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/Lucas-dev98/Evolu-o_Parada_Fria1" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver Código
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
-          <a href="#" class="btn-demo">
-            <i class="fas fa-external-link-alt"></i> Demo
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="./projetos/ExpensiveTracker.png" alt="Expense Tracker - Gerenciador de Despesas - Lucas Bastos" loading="lazy" decoding="async">
+        <div class="tech-tags">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>CSS3</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Expense Tracker</h3>
+        <p>Aplicação para controle de despesas pessoais com interface intuitiva e recursos de categorização.</p>
+        <div class="project-stats">
+          <span><i class="fas fa-chart-pie"></i> Categorização</span>
+          <span><i class="fas fa-mobile-alt"></i> Responsivo</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/expense-tracker" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> Ver no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="./projetos/WebScraping.png" alt="IC Learning Web Scraping - Automação de coleta de dados - Lucas Bastos" loading="lazy" decoding="async">
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>BeautifulSoup</span>
+          <span>Selenium</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>IC Learning Web Scraping</h3>
+        <p>Sistema de web scraping para automação de coleta de dados com técnicas avançadas de extração.</p>
+        <div class="project-stats">
+          <span><i class="fas fa-robot"></i> Automação</span>
+          <span><i class="fas fa-data"></i> Big Data</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/ICLEARNINGWEBSCRAPING" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> Ver no GitHub
           </a>
         </div>
       </div>
@@ -243,11 +351,11 @@
 </section>
 
 <section class="impact-metrics">
-  <h2>Minha jornada em números</h2>
+  <h2 class="animate-on-scroll">Minha jornada em números</h2>
   
   <div class="metrics-grid">
     <div class="metric-item">
-      <div class="metric-value" data-count="15">0</div>
+      <div class="metric-value" data-count="17">0</div>
       <div class="metric-label">Projetos desenvolvidos</div>
     </div>
     
@@ -273,7 +381,7 @@
   <h3>📈 Atividade no GitHub</h3>
   <div class="github-stats-grid">
     <div class="github-stat-card">
-      <img src="https://github-readme-stats.vercel.app/api?username=Lucas-dev98&show_icons=true&theme=gotham&bg_color=1e293b&title_color=60a5fa&icon_color=f97316&text_color=f8fafc&border_color=334155" alt="GitHub Stats do Lucas" loading="lazy">
+      <img src="https://github-readme-stats.vercel.app/api?username=Lucas-dev98&show_icons=true&theme=gotham&bg_color=1e293b&title_color=60a5fa&icon_color=f97316&text_color=f8fafc&border_color=334155" alt="Estatísticas do GitHub de Lucas Bastos" loading="lazy" decoding="async">
     </div>
     
     <div class="github-stat-card">
@@ -287,11 +395,11 @@
 </section>
 
 <!-- Experience Timeline - Seção independente -->
-<section class="experience-timeline">
-  <h3>Experiências que moldaram minha carreira</h3>
+<section class="experience-timeline" id="experience">
+  <h3 class="animate-on-scroll">Experiências que moldaram minha carreira</h3>
   
   <div class="timeline-grid">
-    <div class="experience-card featured">
+    <div class="experience-card featured animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-industry"></i>
       </div>
@@ -307,7 +415,7 @@
       </div>
     </div>
 
-    <div class="experience-card">
+    <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-chart-line"></i>
       </div>
@@ -323,7 +431,7 @@
       </div>
     </div>
 
-    <div class="experience-card">
+    <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-shield-alt"></i>
       </div>
@@ -339,7 +447,7 @@
       </div>
     </div>
 
-    <div class="experience-card">
+    <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-building"></i>
       </div>
@@ -355,7 +463,7 @@
       </div>
     </div>
 
-    <div class="experience-card">
+    <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-graduation-cap"></i>
       </div>
@@ -373,11 +481,185 @@
   </div>
 </section>
 
+<!-- Blog/Articles Section -->
+<section class="blog-section" id="blog">
+  <h3 class="animate-on-scroll">Insights & Conhecimento</h3>
+  <p class="blog-subtitle animate-on-scroll">Compartilhando experiências e aprendizados em desenvolvimento</p>
+  
+  <div class="articles-grid">
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">Desenvolvimento</div>
+        <div class="article-date">2025</div>
+      </div>
+      <h4>Implementando Clean Architecture em React</h4>
+      <p>Como estruturar aplicações React de forma escalável utilizando os princípios da Clean Architecture, separando responsabilidades e facilitando manutenção.</p>
+      <div class="article-tags">
+        <span>React</span>
+        <span>Clean Code</span>
+        <span>Arquitetura</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">5 min de leitura</span>
+        <button class="read-more-btn" data-article="clean-architecture">Ler mais</button>
+      </div>
+    </article>
+
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">Performance</div>
+        <div class="article-date">2025</div>
+      </div>
+      <h4>Otimização de Performance em Node.js</h4>
+      <p>Técnicas avançadas para otimizar aplicações Node.js: clustering, memory management, profiling e monitoramento de performance em produção.</p>
+      <div class="article-tags">
+        <span>Node.js</span>
+        <span>Performance</span>
+        <span>Backend</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">7 min de leitura</span>
+        <button class="read-more-btn" data-article="nodejs-performance">Ler mais</button>
+      </div>
+    </article>
+
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">DevOps</div>
+        <div class="article-date">2024</div>
+      </div>
+      <h4>CI/CD com GitHub Actions e Azure</h4>
+      <p>Configurando pipelines robustos de integração e deploy contínuo usando GitHub Actions e Azure DevOps, incluindo testes automatizados e rollback.</p>
+      <div class="article-tags">
+        <span>DevOps</span>
+        <span>Azure</span>
+        <span>CI/CD</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">8 min de leitura</span>
+        <button class="read-more-btn" data-article="cicd-azure">Ler mais</button>
+      </div>
+    </article>
+
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">Data Analysis</div>
+        <div class="article-date">2024</div>
+      </div>
+      <h4>Power BI na Indústria: Case Vale S.A.</h4>
+      <p>Como implementei dashboards para análise de paradas industriais, reduzindo tempo de identificação de problemas e otimizando processos operacionais.</p>
+      <div class="article-tags">
+        <span>Power BI</span>
+        <span>Data Analysis</span>
+        <span>Indústria</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">6 min de leitura</span>
+        <button class="read-more-btn" data-article="powerbi-vale">Ler mais</button>
+      </div>
+    </article>
+
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">JavaScript</div>
+        <div class="article-date">2024</div>
+      </div>
+      <h4>Async/Await vs Promises: Quando usar cada um</h4>
+      <p>Comparação prática entre diferentes abordagens de programação assíncrona em JavaScript, com exemplos reais e casos de uso específicos.</p>
+      <div class="article-tags">
+        <span>JavaScript</span>
+        <span>Async Programming</span>
+        <span>Best Practices</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">4 min de leitura</span>
+        <button class="read-more-btn" data-article="async-promises">Ler mais</button>
+      </div>
+    </article>
+
+    <article class="article-card animate-on-scroll">
+      <div class="article-header">
+        <div class="article-category">Carreira</div>
+        <div class="article-date">2024</div>
+      </div>
+      <h4>Transição de Carreira para Tech: Minha Jornada</h4>
+      <p>Compartilhando minha experiência de transição para a área de tecnologia, desafios enfrentados, aprendizados e dicas para quem está começando.</p>
+      <div class="article-tags">
+        <span>Carreira</span>
+        <span>Tecnologia</span>
+        <span>Desenvolvimento Pessoal</span>
+      </div>
+      <div class="article-footer">
+        <span class="reading-time">10 min de leitura</span>
+        <button class="read-more-btn" data-article="carreira-tech">Ler mais</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="blog-cta">
+    <p>Interessado em colaborações ou tem alguma pergunta técnica?</p>
+    <a href="mailto:l.o.bastos@live.com" class="btn-secondary">
+      <i class="fas fa-envelope"></i>
+      Vamos conversar
+    </a>
+  </div>
+</section>
+
+<!-- Modal para artigos -->
+<div class="article-modal" id="article-modal">
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-category" id="modal-category"></div>
+      <button class="modal-close" id="modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <h1 class="modal-title" id="modal-title"></h1>
+      <div class="modal-meta">
+        <span class="modal-date" id="modal-date"></span>
+        <span class="modal-reading-time" id="modal-reading-time"></span>
+      </div>
+      
+      <div class="modal-tags" id="modal-tags"></div>
+      
+      <div class="modal-article-content" id="modal-content">
+        <!-- Conteúdo será inserido dinamicamente -->
+      </div>
+      
+      <div class="modal-footer">
+        <div class="modal-share">
+          <span>Compartilhar:</span>
+          <button class="share-btn" data-platform="twitter">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="share-btn" data-platform="linkedin">
+            <i class="fab fa-linkedin"></i>
+          </button>
+          <button class="share-btn" data-platform="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+        
+        <div class="modal-actions">
+          <button class="btn-secondary" id="modal-close-btn">Fechar</button>
+          <a href="mailto:l.o.bastos@live.com?subject=Sobre o artigo" class="btn-primary">
+            <i class="fas fa-envelope"></i>
+            Discutir esse artigo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Skills Section -->
-<section class="skills-highlight">
-  <h3>Stack Tecnológico</h3>
+<section class="skills-highlight" id="skills">
+  <h3 class="animate-on-scroll">Stack Tecnológico</h3>
   <div class="skills-categories">
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Frontend & Mobile</h4>
       <div class="skill-tags">
         <span>React</span>
@@ -388,7 +670,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Backend & APIs</h4>
       <div class="skill-tags">
         <span>Node.js</span>
@@ -399,7 +681,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Databases</h4>
       <div class="skill-tags">
         <span>MongoDB</span>
@@ -410,7 +692,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Cloud & DevOps</h4>
       <div class="skill-tags">
         <span>Azure</span>
@@ -421,7 +703,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Tools & Development</h4>
       <div class="skill-tags">
         <span>Git</span>
@@ -432,7 +714,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Microsoft Ecosystem</h4>
       <div class="skill-tags">
         <span>Power Apps</span>
@@ -444,7 +726,7 @@
       </div>
     </div>
     
-    <div class="skill-category">
+    <div class="skill-category animate-on-scroll">
       <h4>Enterprise Systems</h4>
       <div class="skill-tags">
         <span>SAP</span>
@@ -456,7 +738,7 @@
   </div>
 </section>
 
-<!-- Substitua a seção contact-cta existente por esta versão simplificada -->
+<!-- Seção de contato -->
 <section class="contact-cta" id="contact">
   <div class="contact-container">
     <!-- Header Principal -->
