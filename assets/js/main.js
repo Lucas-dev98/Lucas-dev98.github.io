@@ -87,6 +87,18 @@ if (impactSection) {
 
 // ===== ANIMAÇÕES DE SCROLL =====
 function initScrollAnimations() {
+  // Fallback: garantir que elementos sejam visíveis mesmo sem animação
+  const allAnimateElements = document.querySelectorAll('.animate-on-scroll');
+  
+  // Timer de segurança - mostra elementos após 3 segundos se a animação falhar
+  setTimeout(() => {
+    allAnimateElements.forEach(el => {
+      if (!el.classList.contains('animate')) {
+        el.classList.add('animate');
+      }
+    });
+  }, 3000);
+
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -101,8 +113,16 @@ function initScrollAnimations() {
   }, observerOptions);
 
   // Observar elementos para animação
-  const animateElements = document.querySelectorAll('.animate-on-scroll');
-  animateElements.forEach(el => observer.observe(el));
+  allAnimateElements.forEach(el => observer.observe(el));
+  
+  // Mostrar elementos que já estão na viewport imediatamente
+  allAnimateElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (isVisible) {
+      el.classList.add('animate');
+    }
+  });
 
   // Animação específica para cards com delay
   const cards = document.querySelectorAll('.value-card, .project-card, .experience-card');
@@ -1693,6 +1713,16 @@ const NotificationSystem = {
 
 // ===== INICIALIZAÇÃO =====
 document.addEventListener('DOMContentLoaded', function() {
+  // Garantir que elementos críticos sejam visíveis imediatamente
+  const criticalElements = document.querySelectorAll('.animate-on-scroll');
+  criticalElements.forEach(el => {
+    // Elementos na viewport inicial devem aparecer imediatamente
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.top > -100) {
+      el.classList.add('animate');
+    }
+  });
+  
   initScrollAnimations();
   initHoverEffects();
   initCustomCursor();
@@ -1703,4 +1733,12 @@ document.addEventListener('DOMContentLoaded', function() {
   initAnalytics();
   initThemeSystem();
   initBlogSystem();
+});
+
+// Fallback adicional em caso de problemas com DOMContentLoaded
+window.addEventListener('load', function() {
+  setTimeout(() => {
+    const hiddenElements = document.querySelectorAll('.animate-on-scroll:not(.animate)');
+    hiddenElements.forEach(el => el.classList.add('animate'));
+  }, 1000);
 });

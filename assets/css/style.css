@@ -120,6 +120,23 @@
   transform: translateY(0);
 }
 
+/* Fallback: mostrar elementos após 4s se JS falhar */
+.animate-on-scroll {
+  animation: fallbackShow 0.5s ease-out 4s both;
+}
+
+@keyframes fallbackShow {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elementos que já têm animate não precisam do fallback */
+.animate-on-scroll.animate {
+  animation: none;
+}
+
 .stagger-animation {
   animation-fill-mode: both;
 }
