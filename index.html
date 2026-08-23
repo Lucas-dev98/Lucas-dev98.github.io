@@ -5,15 +5,15 @@
   <link rel="alternate icon" href="favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios. React, Node.js, Python, Power Platform.">
-  <meta name="keywords" content="desenvolvedor full stack, contratar desenvolvedor, desenvolvimento web, sistemas sob medida, Lucas Oliveira Bastos, React, Node.js, Python, JavaScript, Power Platform, Azure, AWS">
+  <meta name="description" content="Currículo de Lucas Oliveira Bastos — Desenvolvedor Full Stack, Bacharel em Sistemas de Informação (UVV) e ex-estagiário de engenharia de software na Vale. React, Go, Node.js, Python e SQL.">
+  <meta name="keywords" content="Lucas Oliveira Bastos, currículo, desenvolvedor full stack, Vale, React, Go, Node.js, Python, SQL, UVV">
   <meta name="author" content="Lucas Oliveira Bastos">
   <meta name="robots" content="index, follow">
   <meta name="language" content="pt-br">
   
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack">
-  <meta property="og:description" content="Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios.">
+  <meta property="og:title" content="Lucas Oliveira Bastos — Currículo | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Bacharel em Sistemas de Informação (UVV). Estágio em engenharia de software na Vale. React • Go • Node.js • Python • SQL.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lucas-dev98.github.io">
   <meta property="og:image" content="https://lucas-dev98.github.io/assets/images/profileImage.jpg">
@@ -21,8 +21,8 @@
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lucas Oliveira Bastos - Desenvolvedor Full Stack">
-  <meta name="twitter:description" content="Desenvolvedor Full Stack especializado em criar soluções tecnológicas que resolvem problemas reais de negócios.">
+  <meta name="twitter:title" content="Lucas Oliveira Bastos — Currículo | Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Bacharel em Sistemas de Informação (UVV). Estágio em engenharia de software na Vale. React • Go • Node.js • Python • SQL.">
   <meta name="twitter:image" content="https://lucas-dev98.github.io/assets/images/profileImage.jpg">
   
   <!-- Structured Data -->
@@ -36,12 +36,12 @@
     "image": "https://lucas-dev98.github.io/assets/images/profileImage.jpg",
     "email": "l.o.bastos@live.com",
     "alumniOf": {
-      "@type": "Organization",
-      "name": "Vale S.A."
+      "@type": "CollegeOrUniversity",
+      "name": "Universidade Vila Velha - UVV"
     },
-    "knowsAbout": ["JavaScript", "React", "Node.js", "Python", "Power Platform", "Azure", "AWS"],
+    "knowsAbout": ["JavaScript", "TypeScript", "React", "Go", "Node.js", "Python", "SQL", "Azure"],
     "sameAs": [
-      "https://linkedin.com/in/lucas-oliveira-bastos",
+      "https://www.linkedin.com/in/lucas-oliveira-bastos",
       "https://github.com/Lucas-dev98"
     ]
   }
@@ -68,17 +68,22 @@
     </div>
     
     <div class="navbar-menu" id="navbar-menu">
-      <a href="#home" class="navbar-item active" data-section="home">Início</a>
-      <a href="#about" class="navbar-item" data-section="about">Sobre</a>
-      <a href="#projects" class="navbar-item" data-section="projects">Projetos</a>
-      <a href="#blog" class="navbar-item" data-section="blog">Blog</a>
-      <a href="#experience" class="navbar-item" data-section="experience">Experiência</a>
-      <a href="#skills" class="navbar-item" data-section="skills">Skills</a>
-      <a href="#contact" class="navbar-item" data-section="contact">Contato</a>
+      <a href="#home" class="navbar-item active" data-section="home" data-i18n="nav.home">Início</a>
+      <a href="#about" class="navbar-item" data-section="about" data-i18n="nav.about">Sobre</a>
+      <a href="#experience" class="navbar-item" data-section="experience" data-i18n="nav.experience">Experiência</a>
+      <a href="#education" class="navbar-item" data-section="education" data-i18n="nav.education">Formação</a>
+      <a href="#projects" class="navbar-item" data-section="projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#skills" class="navbar-item" data-section="skills" data-i18n="nav.skills">Skills</a>
+      <a href="#contact" class="navbar-item" data-section="contact" data-i18n="nav.contact">Contato</a>
     </div>
     
     <div class="navbar-controls">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+      <div class="lang-switcher" role="group" data-i18n-aria="nav.lang" aria-label="Idioma">
+        <button type="button" class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" data-i18n-aria="nav.theme" aria-label="Alternar tema">
         <i class="fas fa-sun theme-icon-light"></i>
         <i class="fas fa-moon theme-icon-dark"></i>
       </button>
@@ -95,340 +100,121 @@
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-image">
-      <img src="assets/images/profileImage.jpg" alt="Foto de Lucas Oliveira Bastos, Desenvolvedor Full Stack" class="profile-photo" width="280" height="280">
+      <img src="assets/images/profileImage.jpg" data-i18n-alt="hero.photo" alt="Foto de Lucas Oliveira Bastos, Desenvolvedor Full Stack" class="profile-photo" width="280" height="280">
     </div>
     
     <h1 class="hero-name">Lucas Oliveira Bastos</h1>
-    <p class="hero-subtitle">Desenvolvedor Full Stack</p>
-    
+    <p class="hero-subtitle" data-i18n="hero.role">Desenvolvedor Full Stack</p>
+    <p class="hero-headline">React • TypeScript • Go • Node.js • Python • SQL</p>
+    <p class="hero-tagline" data-i18n="hero.tagline">Faço soluções tecnológicas de ponta a ponta, com estrutura — da infraestrutura à entrega.</p>
     <div class="cta-buttons">
-      <a href="#projects" class="btn-primary">
-        Ver Projetos
+      <a href="#projects" class="btn-primary" data-i18n="hero.ctaProjects">
+        Ver projetos
       </a>
-      <a href="#contact" class="btn-secondary">
-        Contato
+      <a href="#experience" class="btn-secondary" data-i18n="hero.ctaExperience">
+        Experiência
       </a>
     </div>
   </div>
 </section>
 
 <section class="value-props" id="about">
-  <h2 class="animate-on-scroll">Como posso impulsionar seu negócio?</h2>
+  <h2 class="animate-on-scroll" data-i18n="about.title">Sobre</h2>
+
+  <p class="cv-summary animate-on-scroll" data-i18n="about.p1">
+    Sou desenvolvedor full stack e bacharel em Sistemas de Informação pela Universidade Vila Velha (UVV). Desde 2018 atuo na área de TI. Meu trabalho é fazer soluções tecnológicas de ponta a ponta, de forma estruturada: entender o problema, desenhar a arquitetura, implementar cada camada e deixar o sistema operável.
+  </p>
+  <p class="cv-summary animate-on-scroll" data-i18n="about.p2">
+    Estrutura, para mim, é o caminho completo — rede e servidor, dados, API, autenticação, interface e deploy — com contrato claro, validação, testes e CI. Frontend em React e TypeScript. Backend em Node.js, Go e Python. Persistência em PostgreSQL, MongoDB e Redis. Publicação com Docker. Não entrego pedaço solto: entrego a solução encadeada, pronta para produção.
+  </p>
+  <p class="cv-summary animate-on-scroll" data-i18n="about.p3">
+    Essa visão veio da operação. Na Polícia Civil do ES fiz cabeamento estruturado, redes e suporte N1/N2. Na iData virei especialista técnico em servidores e infraestrutura. Na Vale, como estagiário de engenharia de software, entreguei aplicações, dashboards e automações usados no fluxo operacional. Por isso cada solução que eu monto já nasce pensando em disponibilidade, falha e manutenção — do ambiente ao código.
+  </p>
+  <p class="cv-summary animate-on-scroll" data-i18n="about.langs">
+    Idiomas: português nativo; inglês intermediário pelo CEI — Centro Estadual de Idiomas; espanhol para leitura, escrita e conversação.
+  </p>
   
   <div class="value-cards">
     <div class="value-card animate-on-scroll">
       <div class="icon-box">
-        <i class="fas fa-code"></i>
+        <i class="fas fa-layer-group"></i>
       </div>
-      <h3>Desenvolvimento Full Stack</h3>
-      <p>Soluções completas do frontend ao backend, criando aplicações modernas e performáticas que geram resultados reais.</p>
+      <h3 data-i18n="about.card1Title">Engenharia de software</h3>
+      <p data-i18n="about.card1Text">Contrato da API, tipagem, validação, testes e UI — o produto inteiro, não só a tela.</p>
       <ul>
-        <li>React, Node.js, Python</li>
-        <li>APIs RESTful e GraphQL</li>
-        <li>Arquitetura escalável e limpa</li>
-        <li>DevOps e CI/CD</li>
+        <li data-i18n="about.card1Li1">React + TypeScript: estado, rotas e consumo de API</li>
+        <li data-i18n="about.card1Li2">REST com Express, Fiber e FastAPI</li>
+        <li data-i18n="about.card1Li3">JWT, regras de domínio e Clean Architecture</li>
+        <li data-i18n="about.card1Li4">Testes, Zod/validação e CI no GitHub Actions</li>
       </ul>
     </div>
     
     <div class="value-card animate-on-scroll">
       <div class="icon-box">
-        <i class="fas fa-chart-line"></i>
+        <i class="fas fa-server"></i>
       </div>
-      <h3>Análise de Dados</h3>
-      <p>Transformo dados brutos em insights estratégicos para decisões inteligentes e crescimento sustentável do negócio.</p>
+      <h3 data-i18n="about.card2Title">Infraestrutura e operação</h3>
+      <p data-i18n="about.card2Text">Servidor, rede, cache e deploy. Sei o que quebra em produção porque já operei o ambiente.</p>
       <ul>
-        <li>Business Intelligence (BI)</li>
-        <li>Dashboards interativos</li>
-        <li>Machine Learning e IA</li>
-        <li>Power Platform & Power BI</li>
+        <li data-i18n="about.card2Li1">Servidores, Linux e infraestrutura de TI</li>
+        <li data-i18n="about.card2Li2">Redes, cabeamento estruturado e diagnóstico</li>
+        <li data-i18n="about.card2Li3">Docker, Redis, filas (RabbitMQ) e outbox</li>
+        <li data-i18n="about.card2Li4">Azure, Firebase, Vercel e pipeline de deploy</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="featured-projects" id="projects">
-  <h2 class="animate-on-scroll">Projetos que geraram impacto real</h2>
-  
-  <div class="projects-grid">
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/Vale.jpg" alt="Sistema de Análise Parada Fria - Vale S.A. - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>Python</span>
-          <span>Data Analysis</span>
-          <span>Dashboard</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Evolução Parada Fria</h3>
-        <p>Sistema de análise e monitoramento de paradas industriais com dashboards em tempo real.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-chart-bar"></i> Analytics</span>
-          <span><i class="fas fa-clock"></i> Tempo Real</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/Evolu-o_Parada_Fria1" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/FilhosDoLeao.png" alt="Plataforma Filhos do Leão com sistema completo - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Filhos do Leão</h3>
-        <p>Plataforma web completa com sistema de autenticação e gerenciamento de conteúdo.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-users"></i> Multi-usuário</span>
-          <span><i class="fas fa-shield-alt"></i> Autenticação</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/FilhosDoLeao" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/AirQuality.png" alt="Sistema de monitoramento da qualidade do ar - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>React</span>
-          <span>API</span>
-          <span>JavaScript</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Air Quality Monitoring</h3>
-        <p>Sistema de monitoramento da qualidade do ar em tempo real com alertas e relatórios.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-chart-line"></i> Redução 30% poluição</span>
-          <span><i class="fas fa-dollar-sign"></i> Economia 15% combustível</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/airQuality" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/WebScraping.png" alt="IC Learning Web Scraping - Automação de coleta de dados - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>Python</span>
-          <span>BeautifulSoup</span>
-          <span>Selenium</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>IC Learning Web Scraping</h3>
-        <p>Sistema de web scraping para automação de coleta de dados com técnicas avançadas de extração.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-robot"></i> Automação</span>
-          <span><i class="fas fa-data"></i> Big Data</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/ICLEARNINGWEBSCRAPING" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/ExpensiveTracker.png" alt="Expense Tracker - Gerenciador de Despesas - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>CSS3</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Expense Tracker</h3>
-        <p>Aplicação para controle de despesas pessoais com interface intuitiva e recursos de categorização.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-chart-pie"></i> Categorização</span>
-          <span><i class="fas fa-mobile-alt"></i> Responsivo</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/expense-tracker" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/Pokemon.png" alt="Pokédex interativa com API - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>JavaScript</span>
-          <span>API</span>
-          <span>CSS</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Projeto Pokédex</h3>
-        <p>Pokédex interativa consumindo a PokéAPI com busca e detalhes dos pokémons.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-search"></i> Busca Avançada</span>
-          <span><i class="fas fa-database"></i> 800+ Pokémons</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/projeto-pokedex" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/Spotify.jpg" alt="Clone do Spotify com player funcional - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Spotify Clone</h3>
-        <p>Interface responsiva inspirada no Spotify com player de música funcional.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-mobile-alt"></i> 100% Responsivo</span>
-          <span><i class="fas fa-music"></i> Player Funcional</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/Spotify" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card animate-on-scroll">
-      <div class="project-image">
-        <img src="projetos/XDevs.png" alt="Projeto X-Devs - Landing page moderna - Lucas Bastos" loading="lazy" decoding="async">
-        <div class="tech-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-      </div>
-      <div class="project-content">
-        <h3>Projeto X-Devs</h3>
-        <p>Landing page moderna com animações e design responsivo para desenvolvedores.</p>
-        <div class="project-stats">
-          <span><i class="fas fa-rocket"></i> Animações CSS</span>
-          <span><i class="fas fa-paint-brush"></i> Design Moderno</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Lucas-dev98/projeto-xdevs" target="_blank" rel="noopener noreferrer" class="btn-project">
-            <i class="fab fa-github"></i> Ver no GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="projects-cta">
-    <p>Quer ver mais projetos?</p>
-    <a href="https://github.com/Lucas-dev98" target="_blank" rel="noopener noreferrer" class="btn-github">
-      <i class="fab fa-github"></i>
-      Ver todos no GitHub
-    </a>
-  </div>
-</section>
-
-<section class="impact-metrics">
-  <h2 class="animate-on-scroll">Minha jornada em números</h2>
-  
-  <div class="metrics-grid">
-    <div class="metric-item">
-      <div class="metric-value" data-count="17">0</div>
-      <div class="metric-label">Projetos desenvolvidos</div>
-    </div>
-    
-    <div class="metric-item">
-      <div class="metric-value" data-count="5">0</div>
-      <div class="metric-label">Empresas atendidas</div>
-    </div>
-    
-    <div class="metric-item">
-      <div class="metric-value" data-count="20">0</div>
-      <div class="metric-label">Tecnologias dominadas</div>
-    </div>
-    
-    <div class="metric-item">
-      <div class="metric-value" data-count="3">0</div>
-      <div class="metric-label">Anos de experiência</div>
-    </div>
-  </div>
-</section>
-
-<!-- GitHub Stats - Seção independente -->
-<section class="github-stats-section">
-  <h3>📈 Atividade no GitHub</h3>
-  <div class="github-stats-grid">
-    <div class="github-stat-card">
-      <img src="https://github-readme-stats.vercel.app/api?username=Lucas-dev98&show_icons=true&theme=gotham&bg_color=1e293b&title_color=60a5fa&icon_color=f97316&text_color=f8fafc&border_color=334155" alt="Estatísticas do GitHub de Lucas Bastos" loading="lazy" decoding="async">
-    </div>
-    
-    <div class="github-stat-card">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Lucas-dev98&layout=compact&theme=gotham&bg_color=1e293b&title_color=60a5fa&text_color=f8fafc&border_color=334155" alt="Linguagens mais usadas" loading="lazy">
-    </div>
-  </div>
-  
-  <div class="github-streak">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Lucas-dev98&theme=gotham&background=1e293b&border=334155&stroke=60a5fa&ring=f97316&fire=f97316&currStreakLabel=60a5fa" alt="GitHub Streak" loading="lazy">
-  </div>
-</section>
-
-<!-- Experience Timeline - Seção independente -->
+<!-- Experience Timeline -->
 <section class="experience-timeline" id="experience">
-  <h3 class="animate-on-scroll">Experiências que moldaram minha carreira</h3>
+  <h3 class="animate-on-scroll" data-i18n="exp.title">Experiência profissional</h3>
   
   <div class="timeline-grid">
-    <div class="experience-card featured animate-on-scroll">
+    <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
         <i class="fas fa-industry"></i>
       </div>
       <div class="experience-content">
         <h4>Vale S.A.</h4>
-        <span class="role">Desenvolvedor de Sistemas</span>
-        <p>Desenvolvimento de soluções para análise de paradas industriais em uma das maiores mineradoras do mundo</p>
+        <span class="role" data-i18n="exp.valeRole">Estagiário de Engenharia de Software</span>
+        <span class="experience-period" data-i18n="exp.valePeriod">nov 2024 — nov 2026</span>
+        <span class="experience-location" data-i18n="exp.valeLoc">Vitória, Espírito Santo</span>
+        <p data-i18n="exp.valeText">Engenharia de software no chão de operação: sistemas, dashboards e automações que a equipe usa de fato — não protótipo de apresentação.</p>
+        <ul class="experience-list">
+          <li data-i18n="exp.vale1">Full stack: React/TypeScript, APIs Node/Python e dashboards operacionais</li>
+          <li data-i18n="exp.vale2">Automação de processo, integração de sistemas e redução de trabalho manual</li>
+          <li data-i18n="exp.vale3">Modelagem de dados, visualização e apoio à decisão operacional</li>
+          <li data-i18n="exp.vale4">Visão de processo e conformidade (ISO 19011, 9001 e 14001)</li>
+        </ul>
         <div class="tech-stack">
           <span>Python</span>
-          <span>Data Analysis</span>
-          <span>Dashboard</span>
+          <span>TypeScript</span>
+          <span>Dashboards</span>
+          <span>Azure</span>
         </div>
       </div>
     </div>
 
     <div class="experience-card animate-on-scroll">
       <div class="experience-icon">
-        <i class="fas fa-chart-line"></i>
+        <i class="fas fa-server"></i>
       </div>
       <div class="experience-content">
-        <h4>IData Distribuidora</h4>
-        <span class="role">Desenvolvedor Full Stack</span>
-        <p>Criação de sistemas de gestão e análise de dados para otimização de processos de distribuição</p>
+        <h4>iData Distribuidora</h4>
+        <span class="role" data-i18n="exp.idataRole">Especialista Técnico em Servidores e Infraestrutura</span>
+        <span class="experience-period" data-i18n="exp.idataPeriod">jun 2022 — jun 2024</span>
+        <span class="experience-location" data-i18n="exp.idataLoc">Espírito Santo</span>
+        <p data-i18n="exp.idataText">Virei o especialista técnico da operação: servidores, infraestrutura e ambientes que não podiam parar. Do hardware ao serviço em produção.</p>
+        <ul class="experience-list">
+          <li data-i18n="exp.idata1">Administração de servidores: instalação, serviços, acesso e sustentação</li>
+          <li data-i18n="exp.idata2">Desenho e operação de infraestrutura (rede, storage, disponibilidade)</li>
+          <li data-i18n="exp.idata3">Troubleshooting de SO, hardware e serviços em ambiente crítico</li>
+          <li data-i18n="exp.idata4">Padronização da operação e continuidade — menos falha, menos retrabalho</li>
+        </ul>
         <div class="tech-stack">
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Data Management</span>
+          <span data-i18n="skills.servers">Servidores</span>
+          <span data-i18n="exp.idataTagInfra">Infraestrutura</span>
+          <span data-i18n="exp.idataTagOps">Operação de TI</span>
         </div>
       </div>
     </div>
@@ -439,170 +225,449 @@
       </div>
       <div class="experience-content">
         <h4>Polícia Civil do ES</h4>
-        <span class="role">Desenvolvedor de Sistemas</span>
-        <p>Desenvolvimento de sistemas para gestão e automação de processos administrativos</p>
+        <span class="role" data-i18n="exp.pcesRole">Técnico de Suporte em Redes e Cabeamento Estruturado</span>
+        <span class="experience-period" data-i18n="exp.pcesPeriod">fev 2015 — mar 2017</span>
+        <span class="experience-location" data-i18n="exp.pcesLoc">Espírito Santo</span>
+        <p data-i18n="exp.pcesText">Infraestrutura de rede institucional de ponta a ponta: cabeamento estruturado, conectividade e suporte técnico N1/N2 nas unidades.</p>
+        <ul class="experience-list">
+          <li data-i18n="exp.pces1">Cabeamento estruturado: pontos, patch panel, rack e organização física</li>
+          <li data-i18n="exp.pces2">Diagnóstico de rede (camada física e lógica) e restabelecimento de link</li>
+          <li data-i18n="exp.pces3">Suporte N1/N2: imagem, instalação, remoto, usuários e impressoras</li>
+          <li data-i18n="exp.pces4">Hardware, estações e conectividade sob pressão de ambiente operacional</li>
+        </ul>
         <div class="tech-stack">
-          <span>Web Development</span>
-          <span>Database</span>
-          <span>Security</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-card animate-on-scroll">
-      <div class="experience-icon">
-        <i class="fas fa-building"></i>
-      </div>
-      <div class="experience-content">
-        <h4>Brasil Center</h4>
-        <span class="role">Desenvolvedor Full Stack</span>
-        <p>Criação de aplicações web e sistemas de gestão empresarial</p>
-        <div class="tech-stack">
-          <span>Full Stack</span>
-          <span>React</span>
-          <span>Node.js</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="experience-card animate-on-scroll">
-      <div class="experience-icon">
-        <i class="fas fa-graduation-cap"></i>
-      </div>
-      <div class="experience-content">
-        <h4>Projetos Acadêmicos</h4>
-        <span class="role">Desenvolvedor & Estudante</span>
-        <p>Projetos pessoais e acadêmicos aplicando as melhores práticas de desenvolvimento</p>
-        <div class="tech-stack">
-          <span>JavaScript</span>
-          <span>API Integration</span>
-          <span>Modern UI</span>
+          <span data-i18n="exp.pcesTagCabling">Cabeamento estruturado</span>
+          <span data-i18n="skills.networks">Redes</span>
+          <span data-i18n="skills.support">Suporte N1/N2</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="experience-timeline education-section" id="education">
+  <h3 class="animate-on-scroll" data-i18n="edu.title">Formação acadêmica</h3>
+
+  <div class="timeline-grid">
+    <div class="experience-card featured animate-on-scroll">
+      <div class="experience-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="experience-content">
+        <h4>Universidade Vila Velha — UVV</h4>
+        <span class="role" data-i18n="edu.role">Bacharel em Sistemas de Informação</span>
+        <span class="experience-period" data-i18n="edu.period">2022 — 2026 · Conclusão em dez 2025 · Colação em jan 2026</span>
+        <p data-i18n="edu.text">Diploma de graduação pela UVV. Formação em desenvolvimento de sistemas, banco de dados, engenharia de software e gestão da informação.</p>
+        <div class="tech-stack">
+          <span data-i18n="edu.t1">Engenharia de software</span>
+          <span data-i18n="edu.t2">Banco de dados</span>
+          <span data-i18n="edu.t3">Desenvolvimento web</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certifications-section" id="certifications">
+  <h3 class="animate-on-scroll" data-i18n="cert.title">Licenças e certificações</h3>
+  <div class="cert-grid">
+    <article class="cert-card animate-on-scroll">
+      <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+      <h4>Network Security</h4>
+      <p>Cisco Networking Academy</p>
+      <span data-i18n="cert.networkDate">dez 2025</span>
+    </article>
+    <article class="cert-card animate-on-scroll">
+      <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+      <h4>CCNA: Introduction to Networks</h4>
+      <p>Cisco</p>
+      <span data-i18n="cert.certLabel">Certificação</span>
+    </article>
+    <article class="cert-card animate-on-scroll">
+      <div class="cert-icon"><i class="fas fa-desktop"></i></div>
+      <h4>IT Essentials</h4>
+      <p>Cisco Networking Academy</p>
+      <span data-i18n="cert.itLabel">Hardware e software de PC</span>
+    </article>
+    <article class="cert-card animate-on-scroll">
+      <div class="cert-icon"><i class="fas fa-language"></i></div>
+      <h4 data-i18n="cert.ceiTitle">Inglês Intermediário</h4>
+      <p data-i18n="cert.ceiOrg">CEI — Centro Estadual de Idiomas</p>
+      <span data-i18n="cert.ceiLevel">Idioma</span>
+    </article>
+    <article class="cert-card animate-on-scroll">
+      <div class="cert-icon"><i class="fas fa-clipboard-check"></i></div>
+      <h4 data-i18n="cert.auditTitle">Auditoria Interna</h4>
+      <p data-i18n="cert.auditOrg">Vale — ISO 19011, 9001 e 14001</p>
+      <span data-i18n="cert.auditDate">abr 2025</span>
+    </article>
+  </div>
+</section>
+
+<section class="featured-projects" id="projects">
+  <h2 class="animate-on-scroll" data-i18n="projects.title">Sistemas que eu construí</h2>
+  <p class="section-lead animate-on-scroll" data-i18n="projects.lead">Sistemas com API, persistência, autenticação e operação. Código que mostra domínio técnico — não exercício de curso.</p>
+  
+  <div class="projects-grid">
+    <article class="project-card flagship animate-on-scroll">
+      <div class="project-image">
+        <img src="projetos/AirQuality.png" data-i18n-alt="projects.airAlt" alt="Air Quality — clima, AQI e mapa operacional" loading="lazy" decoding="async">
+        <div class="tech-tags">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Node.js</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.airKind">Full stack • produto</p>
+        <h3>Air Quality</h3>
+        <p data-i18n="projects.airText">Aplicação de clima e qualidade do ar com frontend e API no mesmo repositório: busca por cidade ou coordenadas, AQI, previsão, mapa e alertas.</p>
+        <ul class="project-points">
+          <li data-i18n="projects.air1">React + Vite + TypeScript no client; Express + TypeScript na API</li>
+          <li data-i18n="projects.air2">Zod, Helmet, rate limit, logs Pino, testes e pipeline no GitHub Actions</li>
+          <li data-i18n="projects.air3">Cache Redis, PWA, Mapbox, geofencing e comparador multi-cidades</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/airQuality" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card animate-on-scroll">
+      <div class="project-image">
+        <div class="project-cover">
+          <i class="fas fa-sitemap"></i>
+        </div>
+        <div class="tech-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.epuKind">Full stack • Clean Architecture</p>
+        <h3>EPU-Gestão</h3>
+        <p data-i18n="projects.epuText">Sistema de projetos, equipes e recursos com autenticação JWT, upload e ambiente Docker.</p>
+        <ul class="project-points">
+          <li data-i18n="projects.epu1">API Express com domain, application e infrastructure</li>
+          <li data-i18n="projects.epu2">React 18 + TypeScript + Vite; testes unitários, integração e E2E</li>
+          <li data-i18n="projects.epu3">MongoDB, JWT, Multer e docker-compose</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/gerenciamentoAplication" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card animate-on-scroll">
+      <div class="project-image">
+        <div class="project-cover">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <div class="tech-tags">
+          <span>React</span>
+          <span>Firebase</span>
+          <span>Gemini</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.pocketKind">TCC • produção</p>
+        <h3>PocketGuide</h3>
+        <p data-i18n="projects.pocketText">Guia de viagens com itinerário por IA, mapa e persistência. Trabalho de conclusão na UVV, publicado na Vercel.</p>
+        <ul class="project-points">
+          <li data-i18n="projects.pocket1">React 19 + TypeScript strict, Tailwind e Zustand</li>
+          <li data-i18n="projects.pocket2">Firebase Auth/Firestore, Gemini, Mapbox e PWA</li>
+          <li data-i18n="projects.pocket3">Validação Zod, i18n (PT/EN/ES) e dark mode</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/TCC_II_PocketGuide" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card animate-on-scroll">
+      <div class="project-image">
+        <div class="project-cover">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="tech-tags">
+          <span>Go</span>
+          <span>FastAPI</span>
+          <span>Flutter</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.neuroKind">Backend • plataforma</p>
+        <h3>NeuroLife</h3>
+        <p data-i18n="projects.neuroText">Monorepo com gateway, serviço de IA e app mobile: auth, eventos, tarefas, lembretes e gamificação.</p>
+        <ul class="project-points">
+          <li data-i18n="projects.neuro1">Gateway Go (Fiber), AI em FastAPI, app Flutter</li>
+          <li data-i18n="projects.neuro2">Postgres, Redis, RabbitMQ, MinIO e Docker Compose</li>
+          <li data-i18n="projects.neuro3">Outbox, retry/dead-letter, JWT e canais push/e-mail/WhatsApp</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/NeuroLife" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card animate-on-scroll">
+      <div class="project-image">
+        <div class="project-cover">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="tech-tags">
+          <span>Go</span>
+          <span>Python</span>
+          <span>Flutter</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.agroKind">Plataforma • microsserviços</p>
+        <h3>AgroVision</h3>
+        <p data-i18n="projects.agroText">Plataforma rural com API Gateway em Go, serviços de IA em Python e cliente Flutter (web e mobile).</p>
+        <ul class="project-points">
+          <li data-i18n="projects.agro1">Gateway, usuários, propriedade, produção, estoque e clima</li>
+          <li data-i18n="projects.agro2">PostgreSQL, Redis, MinIO e Docker Compose</li>
+          <li data-i18n="projects.agro3">Módulos de dashboard, assistente de IA e visão computacional</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/AgroVision" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card animate-on-scroll">
+      <div class="project-image">
+        <img src="projetos/Vale.jpg" data-i18n-alt="projects.paradaAlt" alt="Dashboard Evolução Parada Fria" loading="lazy" decoding="async">
+        <div class="tech-tags">
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Express</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <p class="project-kind" data-i18n="projects.paradaKind">Full stack • dashboard</p>
+        <h3>Evolução Parada Fria</h3>
+        <p data-i18n="projects.paradaText">Dashboard em tempo real com API própria: ocupação, evolução e detalhe por área — linha do trabalho na Vale.</p>
+        <ul class="project-points">
+          <li data-i18n="projects.parada1">Frontend React + TypeScript com Chart.js</li>
+          <li data-i18n="projects.parada2">API REST Node.js + Express + TypeScript</li>
+          <li data-i18n="projects.parada3">Atualização periódica, resumo e histórico por área</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Lucas-dev98/Evolu-oParadaFria3" target="_blank" rel="noopener noreferrer" class="btn-project">
+            <i class="fab fa-github"></i> <span data-i18n="projects.code">Código</span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="projects-cta">
+    <p data-i18n="projects.more">Também: Sentrix (FastAPI + análise de sentimento) e Gestão de Gastos IA (React + Node + Gemini + Azure).</p>
+    <a href="https://github.com/Lucas-dev98?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-github">
+      <i class="fab fa-github"></i>
+      <span data-i18n="projects.allRepos">Repositórios no GitHub</span>
+    </a>
+  </div>
+</section>
+
+<section class="impact-metrics">
+  <h2 class="animate-on-scroll" data-i18n="metrics.title">Em números</h2>
+  
+  <div class="metrics-grid">
+    <div class="metric-item">
+      <div class="metric-value" data-count="6">0</div>
+      <div class="metric-label" data-i18n="metrics.systems">Sistemas full stack em destaque</div>
+    </div>
+    
+    <div class="metric-item">
+      <div class="metric-value" data-count="8">0</div>
+      <div class="metric-label" data-i18n="metrics.years">Anos na área de TI</div>
+    </div>
+    
+    <div class="metric-item">
+      <div class="metric-value" data-count="3">0</div>
+      <div class="metric-label" data-i18n="metrics.layers">Camadas: web, API e dados</div>
+    </div>
+    
+    <div class="metric-item">
+      <div class="metric-value" data-count="3">0</div>
+      <div class="metric-label" data-i18n="metrics.cisco">Certificações Cisco</div>
+    </div>
+  </div>
+</section>
+
+<section class="github-stats-section" id="github">
+  <h3 data-i18n="github.title">Atividade no GitHub</h3>
+  <div class="github-native-grid">
+    <div class="github-native-card">
+      <p class="github-native-kicker" data-i18n="github.profile">Perfil</p>
+      <h4>@Lucas-dev98</h4>
+      <div class="github-native-metrics">
+        <div>
+          <strong id="gh-repos">47</strong>
+          <span data-i18n="github.repos">Repositórios</span>
+        </div>
+        <div>
+          <strong id="gh-followers">10</strong>
+          <span data-i18n="github.followers">Seguidores</span>
+        </div>
+        <div>
+          <strong id="gh-stars">13</strong>
+          <span data-i18n="github.stars">Stars</span>
+        </div>
+      </div>
+      <a class="btn-project" href="https://github.com/Lucas-dev98" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> <span data-i18n="github.open">Abrir perfil</span>
+      </a>
+    </div>
+
+    <div class="github-native-card">
+      <p class="github-native-kicker" data-i18n="github.stack">Stack no GitHub</p>
+      <h4 data-i18n="github.langs">Linguagens mais usadas</h4>
+      <ul class="github-lang-list" id="gh-langs">
+        <li><span>JavaScript</span><i style="width: 86%"></i></li>
+        <li><span>Go</span><i style="width: 72%"></i></li>
+        <li><span>TypeScript</span><i style="width: 64%"></i></li>
+        <li><span>Python</span><i style="width: 58%"></i></li>
+        <li><span>HTML / CSS</span><i style="width: 40%"></i></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- Blog/Articles Section -->
 <section class="blog-section" id="blog">
-  <h3 class="animate-on-scroll">Insights & Conhecimento</h3>
-  <p class="blog-subtitle animate-on-scroll">Compartilhando experiências e aprendizados em desenvolvimento</p>
+  <h3 class="animate-on-scroll" data-i18n="blog.title">Insights e conhecimento</h3>
+  <p class="blog-subtitle animate-on-scroll" data-i18n="blog.subtitle">Notas técnicas sobre arquitetura, performance, operação e carreira.</p>
   
   <div class="articles-grid">
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">Desenvolvimento</div>
+        <div class="article-category" data-i18n="blog.a1Cat">Desenvolvimento</div>
         <div class="article-date">2025</div>
       </div>
-      <h4>Implementando Clean Architecture em React</h4>
-      <p>Como estruturar aplicações React de forma escalável utilizando os princípios da Clean Architecture, separando responsabilidades e facilitando manutenção.</p>
+      <h4 data-i18n="blog.a1Title">Implementando Clean Architecture em React</h4>
+      <p data-i18n="blog.a1Text">Como estruturar aplicações React de forma escalável com Clean Architecture: separar responsabilidades e facilitar a manutenção.</p>
       <div class="article-tags">
         <span>React</span>
         <span>Clean Code</span>
-        <span>Arquitetura</span>
+        <span data-i18n="blog.tagArch">Arquitetura</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">5 min de leitura</span>
-        <button class="read-more-btn" data-article="clean-architecture">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a1Time">5 min de leitura</span>
+        <button class="read-more-btn" data-article="clean-architecture" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
 
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">Performance</div>
+        <div class="article-category" data-i18n="blog.a2Cat">Performance</div>
         <div class="article-date">2025</div>
       </div>
-      <h4>Otimização de Performance em Node.js</h4>
-      <p>Técnicas avançadas para otimizar aplicações Node.js: clustering, memory management, profiling e monitoramento de performance em produção.</p>
+      <h4 data-i18n="blog.a2Title">Otimização de performance em Node.js</h4>
+      <p data-i18n="blog.a2Text">Técnicas para otimizar aplicações Node.js: clustering, gestão de memória, profiling e monitoramento em produção.</p>
       <div class="article-tags">
         <span>Node.js</span>
         <span>Performance</span>
         <span>Backend</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">7 min de leitura</span>
-        <button class="read-more-btn" data-article="nodejs-performance">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a2Time">7 min de leitura</span>
+        <button class="read-more-btn" data-article="nodejs-performance" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
 
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">DevOps</div>
+        <div class="article-category" data-i18n="blog.a3Cat">DevOps</div>
         <div class="article-date">2024</div>
       </div>
-      <h4>CI/CD com GitHub Actions e Azure</h4>
-      <p>Configurando pipelines robustos de integração e deploy contínuo usando GitHub Actions e Azure DevOps, incluindo testes automatizados e rollback.</p>
+      <h4 data-i18n="blog.a3Title">CI/CD com GitHub Actions e Azure</h4>
+      <p data-i18n="blog.a3Text">Pipelines de integração e deploy contínuo com GitHub Actions e Azure, incluindo testes automatizados e rollback.</p>
       <div class="article-tags">
         <span>DevOps</span>
         <span>Azure</span>
         <span>CI/CD</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">8 min de leitura</span>
-        <button class="read-more-btn" data-article="cicd-azure">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a3Time">8 min de leitura</span>
+        <button class="read-more-btn" data-article="cicd-azure" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
 
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">Data Analysis</div>
+        <div class="article-category" data-i18n="blog.a4Cat">Análise de dados</div>
         <div class="article-date">2024</div>
       </div>
-      <h4>Power BI na Indústria: Case Vale S.A.</h4>
-      <p>Como implementei dashboards para análise de paradas industriais, reduzindo tempo de identificação de problemas e otimizando processos operacionais.</p>
+      <h4 data-i18n="blog.a4Title">Power BI na indústria: case Vale S.A.</h4>
+      <p data-i18n="blog.a4Text">Como implementei dashboards para análise de paradas industriais, reduzindo o tempo de identificação de problemas e apoiando a operação.</p>
       <div class="article-tags">
         <span>Power BI</span>
         <span>Data Analysis</span>
-        <span>Indústria</span>
+        <span data-i18n="blog.tagIndustry">Indústria</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">6 min de leitura</span>
-        <button class="read-more-btn" data-article="powerbi-vale">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a4Time">6 min de leitura</span>
+        <button class="read-more-btn" data-article="powerbi-vale" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
 
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">JavaScript</div>
+        <div class="article-category" data-i18n="blog.a5Cat">JavaScript</div>
         <div class="article-date">2024</div>
       </div>
-      <h4>Async/Await vs Promises: Quando usar cada um</h4>
-      <p>Comparação prática entre diferentes abordagens de programação assíncrona em JavaScript, com exemplos reais e casos de uso específicos.</p>
+      <h4 data-i18n="blog.a5Title">Async/await vs Promises: quando usar cada um</h4>
+      <p data-i18n="blog.a5Text">Comparação prática entre abordagens de programação assíncrona em JavaScript, com exemplos reais e casos de uso.</p>
       <div class="article-tags">
         <span>JavaScript</span>
         <span>Async Programming</span>
         <span>Best Practices</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">4 min de leitura</span>
-        <button class="read-more-btn" data-article="async-promises">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a5Time">4 min de leitura</span>
+        <button class="read-more-btn" data-article="async-promises" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
 
     <article class="article-card animate-on-scroll">
       <div class="article-header">
-        <div class="article-category">Carreira</div>
+        <div class="article-category" data-i18n="blog.a6Cat">Carreira</div>
         <div class="article-date">2024</div>
       </div>
-      <h4>Transição de Carreira para Tech: Minha Jornada</h4>
-      <p>Compartilhando minha experiência de transição para a área de tecnologia, desafios enfrentados, aprendizados e dicas para quem está começando.</p>
+      <h4 data-i18n="blog.a6Title">Transição de carreira para tech: minha jornada</h4>
+      <p data-i18n="blog.a6Text">A passagem da operação de TI para o desenvolvimento: desafios, aprendizados e o que de fato importa no começo.</p>
       <div class="article-tags">
-        <span>Carreira</span>
-        <span>Tecnologia</span>
-        <span>Desenvolvimento Pessoal</span>
+        <span data-i18n="blog.tagCareer">Carreira</span>
+        <span data-i18n="blog.tagTech">Tecnologia</span>
+        <span data-i18n="blog.tagPersonal">Desenvolvimento pessoal</span>
       </div>
       <div class="article-footer">
-        <span class="reading-time">10 min de leitura</span>
-        <button class="read-more-btn" data-article="carreira-tech">Ler mais</button>
+        <span class="reading-time" data-i18n="blog.a6Time">10 min de leitura</span>
+        <button class="read-more-btn" data-article="carreira-tech" data-i18n="blog.readMore">Ler mais</button>
       </div>
     </article>
   </div>
 
   <div class="blog-cta">
-    <p>Interessado em colaborações ou tem alguma pergunta técnica?</p>
+    <p data-i18n="blog.cta">Quer trocar ideia sobre algum desses temas?</p>
     <a href="mailto:l.o.bastos@live.com" class="btn-secondary">
       <i class="fas fa-envelope"></i>
-      Vamos conversar
+      <span data-i18n="blog.talk">Vamos conversar</span>
     </a>
   </div>
 </section>
@@ -633,7 +698,7 @@
       
       <div class="modal-footer">
         <div class="modal-share">
-          <span>Compartilhar:</span>
+          <span data-i18n="blog.share">Compartilhar:</span>
           <button class="share-btn" data-platform="twitter">
             <i class="fab fa-twitter"></i>
           </button>
@@ -646,10 +711,10 @@
         </div>
         
         <div class="modal-actions">
-          <button class="btn-secondary" id="modal-close-btn">Fechar</button>
-          <a href="mailto:l.o.bastos@live.com?subject=Sobre o artigo" class="btn-primary">
+          <button class="btn-secondary" id="modal-close-btn" data-i18n="blog.close">Fechar</button>
+          <a id="modal-discuss" href="mailto:l.o.bastos@live.com?subject=Sobre o artigo" class="btn-primary">
             <i class="fas fa-envelope"></i>
-            Discutir esse artigo
+            <span data-i18n="blog.discuss">Discutir esse artigo</span>
           </a>
         </div>
       </div>
@@ -659,82 +724,67 @@
 
 <!-- Skills Section -->
 <section class="skills-highlight" id="skills">
-  <h3 class="animate-on-scroll">Stack Tecnológico</h3>
+  <h3 class="animate-on-scroll" data-i18n="skills.title">Stack Tecnológico</h3>
   <div class="skills-categories">
     <div class="skill-category animate-on-scroll">
-      <h4>Frontend & Mobile</h4>
+      <h4 data-i18n="skills.frontend">Frontend</h4>
       <div class="skill-tags">
         <span>React</span>
-        <span>Angular</span>
+        <span>TypeScript</span>
         <span>JavaScript</span>
         <span>HTML/CSS</span>
-        <span>Vue.js</span>
+        <span>Flutter</span>
       </div>
     </div>
     
     <div class="skill-category animate-on-scroll">
-      <h4>Backend & APIs</h4>
+      <h4 data-i18n="skills.backend">Backend & APIs</h4>
       <div class="skill-tags">
-        <span>Node.js</span>
-        <span>Express</span>
-        <span>Python</span>
-        <span>Django</span>
-        <span>Flask</span>
+        <span>Go</span>
+        <span>Node.js / Express</span>
+        <span>Python / FastAPI</span>
+        <span>JWT</span>
       </div>
     </div>
     
     <div class="skill-category animate-on-scroll">
-      <h4>Databases</h4>
+      <h4 data-i18n="skills.data">Dados</h4>
       <div class="skill-tags">
-        <span>MongoDB</span>
         <span>PostgreSQL</span>
-        <span>MySQL</span>
-        <span>MariaDB</span>
-        <span>DBeaver</span>
-      </div>
-    </div>
-    
-    <div class="skill-category animate-on-scroll">
-      <h4>Cloud & DevOps</h4>
-      <div class="skill-tags">
-        <span>Azure</span>
-        <span>AWS</span>
+        <span>MongoDB</span>
+        <span>Redis</span>
         <span>Firebase</span>
+      </div>
+    </div>
+    
+    <div class="skill-category animate-on-scroll">
+      <h4 data-i18n="skills.cloud">Cloud & Ferramentas</h4>
+      <div class="skill-tags">
         <span>Docker</span>
-        <span>Kubernetes</span>
-      </div>
-    </div>
-    
-    <div class="skill-category animate-on-scroll">
-      <h4>Tools & Development</h4>
-      <div class="skill-tags">
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>Postman</span>
+        <span>GitHub Actions</span>
+        <span>Azure</span>
+        <span>Vercel</span>
         <span>Linux</span>
-        <span>Windows</span>
       </div>
     </div>
     
     <div class="skill-category animate-on-scroll">
-      <h4>Microsoft Ecosystem</h4>
+      <h4 data-i18n="skills.microsoft">Microsoft & Gestão</h4>
       <div class="skill-tags">
+        <span>Power BI</span>
         <span>Power Apps</span>
         <span>Power Automate</span>
         <span>SharePoint</span>
-        <span>Power BI</span>
-        <span>Excel</span>
-        <span>Word</span>
       </div>
     </div>
     
     <div class="skill-category animate-on-scroll">
-      <h4>Enterprise Systems</h4>
+      <h4 data-i18n="skills.infra">Infraestrutura</h4>
       <div class="skill-tags">
-        <span>SAP</span>
-        <span>Data Analysis</span>
-        <span>System Integration</span>
-        <span>Business Intelligence</span>
+        <span data-i18n="skills.servers">Servidores</span>
+        <span data-i18n="skills.networks">Redes</span>
+        <span data-i18n="skills.support">Suporte N1/N2</span>
+        <span data-i18n="skills.security">Segurança</span>
       </div>
     </div>
   </div>
@@ -745,8 +795,8 @@
   <div class="contact-container">
     <!-- Header Principal -->
     <div class="contact-header">
-      <h2>Pronto para o próximo projeto?</h2>
-      <p>Vamos criar soluções que impulsionam seu negócio</p>
+      <h2 data-i18n="contact.title">Vamos conversar</h2>
+      <p data-i18n="contact.subtitle">Currículo completo, projetos e disponibilidade para conexões</p>
     </div>
 
     <!-- Conteúdo Principal -->
@@ -755,15 +805,15 @@
       <div class="contact-methods">
         <a href="mailto:l.o.bastos@live.com" class="contact-btn primary">
           <i class="fas fa-envelope"></i>
-          <span>Enviar Email</span>
+          <span data-i18n="contact.email">Enviar Email</span>
         </a>
         
-        <a href="https://linkedin.com/in/lucas-oliveira-bastos" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin">
+        <a href="https://www.linkedin.com/in/lucas-oliveira-bastos/" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin">
           <i class="fab fa-linkedin"></i>
           <span>LinkedIn</span>
         </a>
         
-        <a href="https://wa.me/5527996081600?text=Olá%20Lucas,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+        <a id="whatsapp-link" href="https://wa.me/5527996081600?text=Olá%20Lucas,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
           <i class="fab fa-whatsapp"></i>
           <span>WhatsApp</span>
         </a>
@@ -773,33 +823,25 @@
       <div class="availability">
         <div class="status-indicator">
           <span class="status-dot"></span>
-          <span class="status-text">Disponível para novos projetos</span>
+          <span class="status-text" data-i18n="contact.open">Aberto a conexões e oportunidades</span>
         </div>
-        <p class="response-time">Resposta em até 24h</p>
+        <p class="response-time" data-i18n="contact.reply">Resposta em até 24h</p>
       </div>
     </div>
 
-    <!-- Social Proof -->
     <div class="social-proof">
-      <div class="testimonial">
-        <blockquote>
-          <p>"Lucas demonstrou excelente conhecimento técnico e capacidade de entrega. Desenvolveu soluções que otimizaram nossos processos significativamente."</p>
-          <cite>— Equipe Vale S.A.</cite>
-        </blockquote>
-      </div>
-      
       <div class="contact-stats">
         <div class="stat">
-          <span class="number">15+</span>
-          <span class="label">Projetos</span>
+          <span class="number">6</span>
+          <span class="label" data-i18n="contact.systems">Sistemas</span>
         </div>
         <div class="stat">
-          <span class="number">5+</span>
-          <span class="label">Empresas</span>
+          <span class="number">8+</span>
+          <span class="label" data-i18n="contact.years">Anos</span>
         </div>
         <div class="stat">
-          <span class="number">100%</span>
-          <span class="label">Satisfação</span>
+          <span class="number">UVV</span>
+          <span class="label">2022–2026</span>
         </div>
       </div>
     </div>
@@ -812,36 +854,36 @@
     <div class="footer-main">
       <!-- Logo/Banner -->
       <div class="footer-brand">
-        <img src="assets/images/profileImage.jpg" alt="Lucas Oliveira Bastos Banner" class="footer-logo">
-        <p class="footer-tagline">Transformando ideias em soluções digitais</p>
+        <img src="assets/images/profileImage.jpg" data-i18n-alt="footer.photo" alt="Foto de Lucas Oliveira Bastos" class="footer-logo">
+        <p class="footer-tagline" data-i18n="hero.role">Desenvolvedor Full Stack</p>
       </div>
       
       <!-- Links rápidos -->
       <div class="footer-links">
         <div class="footer-section">
-          <h4>Navegação</h4>
+          <h4 data-i18n="footer.nav">Navegação</h4>
           <ul>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#projects" data-i18n="footer.projects">Projetos</a></li>
+            <li><a href="#contact" data-i18n="footer.contact">Contato</a></li>
             <li><a href="https://github.com/Lucas-dev98" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h4>Contato</h4>
+          <h4 data-i18n="footer.contact">Contato</h4>
           <ul>
             <li><a href="mailto:l.o.bastos@live.com">l.o.bastos@live.com</a></li>
-            <li><a href="https://linkedin.com/in/lucas-oliveira-bastos" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/lucas-oliveira-bastos/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href="https://wa.me/5527996081600" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h4>Tecnologias</h4>
+          <h4 data-i18n="footer.tech">Tecnologias</h4>
           <ul>
-            <li>React & Node.js</li>
-            <li>Python & Data Analysis</li>
-            <li>Power Platform</li>
+            <li data-i18n="footer.tech1">React, Go e Node.js</li>
+            <li data-i18n="footer.tech2">Python e SQL</li>
+            <li data-i18n="footer.tech3">Azure e Power Platform</li>
           </ul>
         </div>
       </div>
@@ -853,14 +895,14 @@
     <!-- Rodapé inferior -->
     <div class="footer-bottom">
       <div class="footer-copyright">
-        <p>© 2025 Lucas Oliveira Bastos • Todos os direitos reservados</p>
+        <p data-i18n="footer.copy">© 2026 Lucas Oliveira Bastos • Currículo e portfólio</p>
       </div>
       
       <div class="footer-social">
         <a href="https://github.com/Lucas-dev98" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/lucas-oliveira-bastos" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/lucas-oliveira-bastos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
         <a href="mailto:l.o.bastos@live.com" aria-label="Email">
@@ -872,6 +914,8 @@
 </footer>
 
 
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/blog-i18n.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
